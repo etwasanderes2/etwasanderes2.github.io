@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JAL - DLX Reference</title>
+    <meta charset="UTF-8">
+    <link href="../../stylesheets/general.css" rel="stylesheet">
+    <link href="../../stylesheets/instruction.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div><a href="../not-index.html">Zurück zur Übersicht</a></div>
+      <div class="title">
+        <h1>JAL</h1>
+        <p>Jump And Link</p>
+      </div>
+      <div class="taglist">
+        <h2>Tags</h2>
+        <ul>
+          <li>
+            <p>format:jump</p>
+          </li>
+          <li>
+            <p>category:flow:jump</p>
+          </li>
+          <li>
+            <p>category:flow</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Syntax</h2>
+        <p class="codeblock syntaxbox"><span class="ch_instruction">JAL</span> <span class="ch_label ch_arg">label</span></p>
+      </div>
+      <div>
+        <h2>Operation</h2>
+        <p class="codeblock">PC = NPC + Imm; R31 = NPC</p>
+      </div>
+      <div>
+        <h2>Beschreibung</h2>
+        <div class="desc">
+          <p>Springe zu dem angegeben Label.
+Speichere die Adresse des nächsten Befehls in R31.
+
+Die Labels werden beim Kompilieren durch tatsächliche Zahlenwerte ersetzt.</p>
+        </div>
+        <div class="warn">
+          <p>Der Sprung passiert relativ zur Adresse des nächsten Befehls.
+Da Imm eine signed 26 bit Zahl ist (Sonderfall bei Jump, sonst 16 bit) und ein Befehl 32 bit Speicher verwendet, kann somit maximal 8388607 Befehle vor- bzw. 8388608 Befehle zurück gesprungen werden (Relativ zum nächsten Befehl).
+Unser DLX Emulator mag es nicht, wenn man die Immediate Werte direkt angibt, also einfach Label angeben</p>
+        </div>
+      </div>
+      <div>
+        <h2>Typische Verwendungszwecke</h2>
+        <ul>
+          <li>Aufruf von Unterprogrammen</li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <h2>Siehe auch</h2>
+        <table class="seealso">
+          <tr>
+            <td>Register Version</td>
+            <td><a href="JALR.html">JALR</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

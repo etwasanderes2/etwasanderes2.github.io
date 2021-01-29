@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JR - DLX Reference</title>
+    <meta charset="UTF-8">
+    <link href="../../stylesheets/general.css" rel="stylesheet">
+    <link href="../../stylesheets/instruction.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div><a href="../not-index.html">Zurück zur Übersicht</a></div>
+      <div class="title">
+        <h1>JR</h1>
+        <p>Jump Register</p>
+      </div>
+      <div class="taglist">
+        <h2>Tags</h2>
+        <ul>
+          <li>
+            <p>format:immediate</p>
+          </li>
+          <li>
+            <p>category:flow:jump</p>
+          </li>
+          <li>
+            <p>category:flow</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Syntax</h2>
+        <p class="codeblock syntaxbox"><span class="ch_instruction">JR</span> <span class="ch_register ch_arg">register</span></p>
+      </div>
+      <div>
+        <h2>Operation</h2>
+        <p class="codeblock">PC = Rs1</p>
+      </div>
+      <div>
+        <h2>Beschreibung</h2>
+        <div class="desc">
+          <p>Springe zu der in Rs1 angegeben Adresse.</p>
+        </div>
+        <div class="warn">
+          <p>User DLX Emulator verwendet Zeilennummer anstatt Adressen.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Typische Verwendungszwecke</h2>
+        <ul>
+          <li>Schleifen</li>
+          <li>Rücksprung von Unterprogrammen</li>
+          <li>Wenn die 26 bit von J nicht genug sind</li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <h2>Siehe auch</h2>
+        <table class="seealso">
+          <tr>
+            <td>Immediate Version</td>
+            <td><a href="J.html">J</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

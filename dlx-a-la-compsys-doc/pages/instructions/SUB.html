@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SUB - DLX Reference</title>
+    <meta charset="UTF-8">
+    <link href="../../stylesheets/general.css" rel="stylesheet">
+    <link href="../../stylesheets/instruction.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div><a href="../not-index.html">Zurück zur Übersicht</a></div>
+      <div class="title">
+        <h1>SUB</h1>
+        <p>Subtract</p>
+      </div>
+      <div class="taglist">
+        <h2>Tags</h2>
+        <ul>
+          <li>
+            <p>format:register</p>
+          </li>
+          <li>
+            <p>category:arithmetic:math</p>
+          </li>
+          <li>
+            <p>category:arithmetic</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Syntax</h2>
+        <p class="codeblock syntaxbox"><span class="ch_instruction">SUB</span> <span class="ch_register ch_arg">register</span> <span class="ch_register ch_arg">register</span> <span class="ch_register ch_arg">register</span></p>
+      </div>
+      <div>
+        <h2>Operation</h2>
+        <p class="codeblock">Rd = Rs1 - Rs2</p>
+      </div>
+      <div>
+        <h2>Beschreibung</h2>
+        <div class="desc">
+          <p>Subtrahiert die Zahl in Rs2 von der in Rs1. Das Ergebnis wird in Rd gespeichert.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Typische Verwendungszwecke</h2>
+        <ul>
+          <li>Mathe</li>
+          <li>Adressberechnung</li>
+          <li>Negieren von Registern (mittels Rs1 = R0)</li>
+          <li>Kopieren von Registern (mittels Rs2 = R0)</li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <h2>Siehe auch</h2>
+        <table class="seealso">
+          <tr>
+            <td>Immediate Version</td>
+            <td><a href="SUBI.html">SUBI</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

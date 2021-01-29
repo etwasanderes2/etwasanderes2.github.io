@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SW - DLX Reference</title>
+    <meta charset="UTF-8">
+    <link href="../../stylesheets/general.css" rel="stylesheet">
+    <link href="../../stylesheets/instruction.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div><a href="../not-index.html">Zurück zur Übersicht</a></div>
+      <div class="title">
+        <h1>SW</h1>
+        <p>Store Word</p>
+      </div>
+      <div class="taglist">
+        <h2>Tags</h2>
+        <ul>
+          <li>
+            <p>format:immediate</p>
+          </li>
+          <li>
+            <p>category:memory</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Syntax</h2>
+        <p class="codeblock syntaxbox"><span class="ch_instruction">SW</span> <span class="ch_address ch_arg">address</span> <span class="ch_register ch_arg">register</span></p>
+      </div>
+      <div>
+        <h2>Operation</h2>
+        <p class="codeblock">Mem[Imm + Rs1] = Rs2</p>
+      </div>
+      <div>
+        <h2>Beschreibung</h2>
+        <div class="desc">
+          <p>Berechne eine Adresse im Speicher und speichere dort Rs2.
+Die Adresse wir berechnet, in dem ein Immediate Wert mit dem Wert eines Registers addiert wird.</p>
+        </div>
+        <div class="warn">
+          <p>Etwas inkonsistente Namensgebung:
+Befehle im Immediate Format verwenden typischerweise zwei Register, die mit Rd und Rs1 bezeichnet werden.
+Allerdings ist Rd typischerweise die Bezeichnung für das Register, in das ein Wert geschrieben wird.
+Deswegen haben wir hier die Register mit Rs1 und Rs2 bezeichnet.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Typische Verwendungszwecke</h2>
+        <ul>
+          <li>Speichern von Werten</li>
+          <li>Array Zugriff</li>
+          <li>Stack Push</li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <h2>Siehe auch</h2>
+        <table class="seealso">
+          <tr>
+            <td>Zum Lese des Speichers</td>
+            <td><a href="LW.html">LW</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

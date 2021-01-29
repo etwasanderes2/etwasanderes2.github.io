@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BEQZ - DLX Reference</title>
+    <meta charset="UTF-8">
+    <link href="../../stylesheets/general.css" rel="stylesheet">
+    <link href="../../stylesheets/instruction.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div><a href="../not-index.html">Zurück zur Übersicht</a></div>
+      <div class="title">
+        <h1>BEQZ</h1>
+        <p>Branch if Equal to Zero</p>
+      </div>
+      <div class="taglist">
+        <h2>Tags</h2>
+        <ul>
+          <li>
+            <p>format:immediate</p>
+          </li>
+          <li>
+            <p>category:flow:branch</p>
+          </li>
+          <li>
+            <p>category:flow</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Syntax</h2>
+        <p class="codeblock syntaxbox"><span class="ch_instruction">BEQZ</span> <span class="ch_register ch_arg">register</span> <span class="ch_label ch_arg">label</span></p>
+      </div>
+      <div>
+        <h2>Operation</h2>
+        <p class="codeblock">PC = if (Rs1 == 0) then (NPC + Imm) else (NPC)</p>
+      </div>
+      <div>
+        <h2>Beschreibung</h2>
+        <div class="desc">
+          <p>Wenn Rs1 gleich 0 ist, springe zu den angegeben Label.
+An sonst führe die nächste Instruktion aus.
+
+Die Labels werden beim Kompilieren durch tatsächliche Zahlenwerte ersetzt.</p>
+        </div>
+        <div class="warn">
+          <p>Der Sprung passiert relativ zur Adresse des nächsten Befehls.
+Da Imm eine signed 16 bit Zahl ist und ein Befehl 32 bit Speicher verwendet, kann somit maximal  8191 Befehle vor- bzw.  8192 Befehle zurück gesprungen werden (Relativ zum nächsten Befehl).
+Unser DLX Emulator mag es nicht, wenn man die Immediate Werte direkt angibt, also einfach Label angeben</p>
+        </div>
+      </div>
+      <div>
+        <h2>Typische Verwendungszwecke</h2>
+        <ul>
+          <li>Verzweigungen</li>
+          <li>Schleifen</li>
+          <li>Wenn BNEZ das Gegenteil von dem tut, was man will</li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <h2>Siehe auch</h2>
+        <table class="seealso">
+          <tr>
+            <td>Negierte Version</td>
+            <td><a href="BNEZ.html">BNEZ</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

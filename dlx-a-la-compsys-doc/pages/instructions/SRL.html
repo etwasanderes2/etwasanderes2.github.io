@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SRL - DLX Reference</title>
+    <meta charset="UTF-8">
+    <link href="../../stylesheets/general.css" rel="stylesheet">
+    <link href="../../stylesheets/instruction.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div><a href="../not-index.html">Zurück zur Übersicht</a></div>
+      <div class="title">
+        <h1>SRL</h1>
+        <p>Shift Right Logical</p>
+      </div>
+      <div class="taglist">
+        <h2>Tags</h2>
+        <ul>
+          <li>
+            <p>format:register</p>
+          </li>
+          <li>
+            <p>category:logic:shift</p>
+          </li>
+          <li>
+            <p>category:logic</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Syntax</h2>
+        <p class="codeblock syntaxbox"><span class="ch_instruction">SRL</span> <span class="ch_register ch_arg">register</span> <span class="ch_register ch_arg">register</span> <span class="ch_register ch_arg">register</span></p>
+      </div>
+      <div>
+        <h2>Operation</h2>
+        <p class="codeblock">Rd = Rs1 &gt;&gt;&gt; (Rs2 % 32)</p>
+      </div>
+      <div>
+        <h2>Beschreibung</h2>
+        <div class="desc">
+          <p>Schiebt die Bit der Zahl in Rs1 um Rs2 (modulo 32) Stellen nach rechts. Es wird mit 0 aufgefüllt. Das Ergebnis wird in Rd gespeichert.</p>
+        </div>
+        <div class="warn">
+          <p>Da um Rs2 modulo 32 verschoben wird, entspricht ein Rechts Shift um 32 einem Rechts Shift um 0.
+Eignet sich nicht zur Division, hierzu siehe SRA.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Typische Verwendungszwecke</h2>
+        <ul>
+          <li>Verschieben von Bit</li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <h2>Siehe auch</h2>
+        <table class="seealso">
+          <tr>
+            <td>Immediate Version</td>
+            <td><a href="SRLI.html">SRLI</a></td>
+          </tr>
+          <tr>
+            <td>Arithmetische Version</td>
+            <td><a href="SRA.html">SRA</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

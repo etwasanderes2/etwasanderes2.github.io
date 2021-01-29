@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADDI - DLX Reference</title>
+    <meta charset="UTF-8">
+    <link href="../../stylesheets/general.css" rel="stylesheet">
+    <link href="../../stylesheets/instruction.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div><a href="../not-index.html">Zurück zur Übersicht</a></div>
+      <div class="title">
+        <h1>ADDI</h1>
+        <p>Add Immediate</p>
+      </div>
+      <div class="taglist">
+        <h2>Tags</h2>
+        <ul>
+          <li>
+            <p>format:immediate</p>
+          </li>
+          <li>
+            <p>category:arithmetic:math</p>
+          </li>
+          <li>
+            <p>category:arithmetic</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Syntax</h2>
+        <p class="codeblock syntaxbox"><span class="ch_instruction">ADDI</span> <span class="ch_register ch_arg">register</span> <span class="ch_register ch_arg">register</span> <span class="ch_immediate ch_arg">immediate</span></p>
+      </div>
+      <div>
+        <h2>Operation</h2>
+        <p class="codeblock">Rd = Rs1 + Imm</p>
+      </div>
+      <div>
+        <h2>Beschreibung</h2>
+        <div class="desc">
+          <p>Addiert die Zahl aus Rs1 und die Zahl aus dem Immediate. Das Ergebnis wird in Rd gespeichert.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Typische Verwendungszwecke</h2>
+        <ul>
+          <li>Mathe</li>
+          <li>Adressberechnung</li>
+          <li>Initialisieren von Registern (mittels R0)</li>
+          <li>Kopieren von Registern (mittels #0)</li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <h2>Siehe auch</h2>
+        <table class="seealso">
+          <tr>
+            <td>Register Version</td>
+            <td><a href="ADD.html">ADD</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
